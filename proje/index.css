@@ -1,0 +1,108 @@
+.commonSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid grey;
+    border-radius: 10PX;
+    /* max-width: max-content; */
+    width: 300PX;
+    padding: 0 0 10PX 0;
+}
+.yellowSection{
+    background-color: yellow;
+    border-top-left-radius: 10PX;
+    border-top-right-radius: 10PX;
+    height: 20px;
+    width: 100%;
+    
+}
+.inputSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sortIcon{
+    width: 100%;
+    margin-bottom: 20PX;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+.inCycle{
+    border-radius: 50%;
+    border: 1px solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+}
+ i{
+    color: grey;
+    z-index: 2;
+    font-size: 10px;
+}
+input{
+    border: 0PX;
+    height: 20px;
+}
+input:focus-visible{
+    border: 0px !important;
+    outline: 0px;
+}
+.input{
+    border: 2px solid grey;
+    border-radius: 10px;
+    padding: 0 10px;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    padding: 3px 6px;
+
+}
+.dobavit{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    background-color: blueviolet;
+    border-radius: 20px;
+    width: 100px;
+    height: 30px;
+    align-items: center;
+}
+.pilusIcon{
+    background-color: grey;
+    opacity: 0.5;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.siyahi{
+    border: 1px solid grey;
+    width: 200px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.siyahi div{
+    /* height: 25px; */
+}
+.newItem{
+    display: flex;
+    justify-content: space-between;
+}
+.dobavit:hover .pilusIcon i{
+    transition-duration: 0.5s;
+    transform: rotate(90deg);
+}
+.dobavit .pilusIcon i{
+    transition-duration: 0.5s;
+}
