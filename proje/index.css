@@ -6,11 +6,12 @@
     border: 1px solid grey;
     border-radius: 10PX;
     /* max-width: max-content; */
-    width: 300PX;
+    width: 336PX;
     padding: 0 0 10PX 0;
+    margin: 0 auto;
 }
 .yellowSection{
-    background-color: yellow;
+    background-color:#FFDC40;
     border-top-left-radius: 10PX;
     border-top-right-radius: 10PX;
     height: 20px;
@@ -36,8 +37,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
+}
+.inCycle:hover {
+    background-color: blueviolet;
+    color: white;
+    border-color: blueviolet;
+    cursor: pointer;
+}
+.inCycle:hover i{
+    color: white;
 }
  i{
     color: grey;
@@ -46,7 +56,8 @@
 }
 input{
     border: 0PX;
-    height: 20px;
+    /* height: 40px;
+    width: 286px; */
 }
 input:focus-visible{
     border: 0px !important;
@@ -56,6 +67,8 @@ input:focus-visible{
     border: 2px solid grey;
     border-radius: 10px;
     padding: 0 10px;
+    height: 40px;
+    width: 286px;
 }
 .flex-row{
     display: flex;
@@ -69,35 +82,50 @@ input:focus-visible{
     color: white;
     background-color: blueviolet;
     border-radius: 20px;
-    width: 100px;
-    height: 30px;
+    width: 150px;
+    height: 42px;
     align-items: center;
+    transition-duration: 0.3s;
+}
+.dobavit:hover{
+    cursor: pointer;
+    box-shadow: -1px 9px 18px -5px blueviolet;
+    transition-duration: 0.3s;
 }
 .pilusIcon{
     background-color: grey;
     opacity: 0.5;
-    width: 30px;
-    height: 30px;
+    width: 42px;
+    height: 42px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 10px;
 }
-
+.sortIcon i:hover{
+    color: black;
+    cursor: pointer;
+}
 .siyahi{
     border: 1px solid grey;
-    width: 200px;
+    border-radius: 10px;
+    width: 286px;
     padding-bottom: 20px;
     padding-top: 20px;
+
 }
 
 .siyahi div{
     /* height: 25px; */
+    margin-left: 17px;
+    margin-right: 5px;
+    margin-bottom: 2px;
 }
 .newItem{
     display: flex;
     justify-content: space-between;
+    overflow-wrap:anywhere;
 }
 .dobavit:hover .pilusIcon i{
     transition-duration: 0.5s;

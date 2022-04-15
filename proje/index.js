@@ -24,7 +24,28 @@ $(document).ready(function(){
     inputX.addEventListener("click",function(){
         input.value="";
     })
-    
+    input.addEventListener('keyup', (event) => {
+        // console.log('Key pressed');
+        if(event.key=="Enter"){
+            if(input.value!=""){
+                let a=document.createElement("div");
+                a.setAttribute("class","newItem")
+                a.innerText=input.value;
+                siyahi.append(a);
+        
+                let b=document.createElement("div");
+                b.setAttribute("class","itemXIcon")
+                b.innerHTML=`<div class="inCycle " id="addingItem"> <i class="fa-solid fa-xmark " ></i></div>`;
+                a.append(b);
+                input.value="";
+            }
+            else{
+                alert("Deyer daxil edin")
+            }
+        }
+      });
+
+      
     sortDown.addEventListener("click",function(){
         sortDown.style.display="none"
         let list=[];
@@ -52,6 +73,7 @@ $(document).ready(function(){
         // console.log(list)
         sortUp.style.display="block"
     })
+
 
 
 
